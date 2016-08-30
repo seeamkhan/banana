@@ -15,4 +15,4 @@ String  = BANANA
 Kevin's vowel beginning word = ANA
 Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points. 
 
-For better understanding, see image Banana.png
+For better understanding, see image banana.png

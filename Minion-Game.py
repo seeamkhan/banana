@@ -1,4 +1,9 @@
 #The Minion Game.
+import time
+
+def main():
+    str = raw_input()
+    minion(str.upper())
 
 def minion(str):
     person_a_name = 'Kevin'
@@ -6,12 +11,11 @@ def minion(str):
     vowels = ['A','E','I','O','U']
     consonants = ['Q','W','R','T','Y','P','S','D','F','G','H','J','K','L','Z','X','C','V','B','N','M']
     char_list = list(str)
-    # print (char_list)
     total_char = len(char_list)
-    # print (total_char)
     person_a_words = []
     person_b_words = []
 
+    #Create all possible words
     all_words = []
     for count in xrange(total_char):
         for i in xrange(count, total_char):
@@ -42,11 +46,14 @@ def minion(str):
     if person_a_score < person_b_score:
         print person_b_name, "wins!"
         print "Score:", person_b_score
+    time.sleep(10)
+    print "Thank! Good by.."
+    time.sleep(3)
 
 
 
 def main():
-    str = raw_input()
+    str = raw_input("Type a Word(for example, banana; Remember, Kevin loves vowels and Stuart loves consonants): ")
     minion(str.upper())
 
 if __name__ == '__main__':
