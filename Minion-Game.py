@@ -46,10 +46,11 @@ def minion(str):
     if person_a_score < person_b_score:
         print person_b_name, "wins!"
         print "Score:", person_b_score
-    time.sleep(10)
-    print "Thank! Good by.."
+    time.sleep(1)
+    print "Thanks!"
     time.sleep(3)
-
+    print "Good by.."
+    time.sleep(1)
 
 
 def main():
